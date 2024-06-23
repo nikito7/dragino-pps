@@ -1,8 +1,21 @@
-# dragino-pps
-Dragino Allwinner H3. Stratum 1 GPS Clock. PPS on uart1 rx PG7.
+# Dragino LPS8v2
 
+- Dragino Allwinner H3.
+- Stratum 1 GPS Clock.
+- PPS on uart1 rx PG7.
 
-# Debug
+# disable uart1 / serial1
+
+```
+armbian-add-overlay sun8i-h3-uart1.dts
+```
+# enable pps-gpio 
+
+```
+armbian-add-overlay sun8i-h3-pps-gpio.dts
+```
+
+# debug
 
 If it's ok only shows two tty:
 
