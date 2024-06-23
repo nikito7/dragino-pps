@@ -6,6 +6,8 @@
 
 You need to solder an wire in H3 socket to pps pin (or pps led) of gps device.
 
+![PG7](./PG7.jpg)
+
 # disable uart1 / serial1
 
 ```
