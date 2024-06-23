@@ -4,6 +4,8 @@
 - Stratum 1 GPS Clock.
 - PPS on uart1 rx PG7.
 
+You need to solder an wire in H3 socket to pps pin (or pps led) of gps device.
+
 # disable uart1 / serial1
 
 ```
@@ -37,3 +39,9 @@ dmesg | grep pps
 [   19.315655] pps pps1: new PPS source acm0
 [   19.315734] pps pps1: source "/dev/ttyACM0" added
 ```
+
+# dts source
+
+https://github.com/armbian/sunxi-DT-overlays/tree/master/sun8i-h3
+
+
