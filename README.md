@@ -60,7 +60,7 @@ source 0 - assert 1719179770.000007718, sequence: 3201 - clear  0.000000000, seq
 source 0 - assert 1719179771.000012727, sequence: 3202 - clear  0.000000000, sequence: 0
 ```
 
-# now follow any tutorial
+# follow any tutorial
 
 https://blog.networkprofile.org/gps-backed-local-ntp-server/
 
