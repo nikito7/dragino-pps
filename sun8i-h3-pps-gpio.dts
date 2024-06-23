@@ -1,0 +1,29 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+        compatible = "allwinner,sun8i-h3";
+
+        fragment@0 {
+                target = <&pio>;
+                __overlay__ {
+                        pps_pins: pps_pins {
+                                pins = "PG7";
+                                function = "gpio_in";
+                        };
+                };
+        };
+
+        fragment@1 {
+                target-path = "/";
+                __overlay__ {
+                        pps@0 {
+                                compatible = "pps-gpio";
+                                pinctrl-names = "default";
+                                pinctrl-0 = <&pps_pins>;
+                                gpios = <&pio 6 7 0>; /* PG7 */
+                                status = "okay";
+                        };
+                };
+        };
+};
